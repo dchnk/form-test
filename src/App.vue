@@ -1,23 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Heading from "@/components/Heading.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div class="page">
+    <Heading/>
+  </div>
 </template>
 
 <style>
@@ -25,7 +13,6 @@ import HelloWorld from './components/HelloWorld.vue'
 @import url("./vendor/fonts.css");
 
 .page {
-  margin: 0 auto;
   font-family: Manrope, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +23,7 @@ import HelloWorld from './components/HelloWorld.vue'
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
